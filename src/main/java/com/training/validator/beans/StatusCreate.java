@@ -1,14 +1,22 @@
 package com.training.validator.beans;
 
 public class StatusCreate {
-    int created;
+    private boolean created;
+    private String errors;
 
-    public int getCreated() {
+    public boolean getCreated() {
         return created;
     }
 
-    public void setCreated(int created) {
+    public void setCreated(boolean created) {
         this.created = created;
     }
 
+    public String getErrors() {
+        return errors;
+    }
+
+    public void setErrors(String errors) {
+        this.errors = errors;
+    }
 }
